@@ -12,7 +12,7 @@
 package pfring
 
 /*
-#cgo LDFLAGS: -lpfring -lpcap
+#cgo LDFLAGS: -lpfring -lpcap -lnuma
 #include <stdlib.h>
 #include <pfring.h>
 #include <linux/pf_ring.h>
@@ -25,7 +25,6 @@ import "C"
 
 import (
 	"fmt"
-	//"github.com/google/gopacket"
 	"os"
 	"strconv"
 	"sync"

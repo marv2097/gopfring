@@ -1,10 +1,12 @@
-# GoPacket
+# GoPfring
 
-This library provides packet decoding capabilities for Go.
+This library provides a pfring packet capture capabilities for Go.
+
+This is a cutdown version of the pfring lib included with gopacket.
+Dependencies to gopacket have been removed to reduce overhead. Gopacket
+is recommended in most cases but if you just need to access a pfring
+interface then this library will give you the basics.
+
+
+Originally forked from the gopacket project written by Google (http://github.com/google/gopacket).
 See [godoc](https://godoc.org/github.com/google/gopacket) for more details.
-
-[![Build Status](https://travis-ci.org/google/gopacket.svg?branch=master)](https://travis-ci.org/google/gopacket)
-[![GoDoc](https://godoc.org/github.com/google/gopacket?status.svg)](https://godoc.org/github.com/google/gopacket)
-
-Originally forked from the gopcap project written by Andreas
-Krennmair <ak@synflood.at> (http://github.com/akrennmair/gopcap).
