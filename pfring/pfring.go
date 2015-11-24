@@ -5,6 +5,10 @@
 // that can be found in the LICENSE file in the root of the source
 // tree.
 
+// This fork is intended to be a cut-down version of gopacket with decoding
+// and non pfring related code removed to keep the code small and simple
+
+
 package pfring
 
 /*
@@ -21,7 +25,7 @@ import "C"
 
 import (
 	"fmt"
-	"github.com/google/gopacket"
+	//"github.com/google/gopacket"
 	"os"
 	"strconv"
 	"sync"
